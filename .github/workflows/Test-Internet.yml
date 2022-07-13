@@ -10,6 +10,16 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
+  ipTest:
+    runs-on: windows-latest
+    steps:
+      - name: Ping-Cloudflare
+        run: ping 1.1.1.1
+  ipTest2:
+    runs-on: windows-latest
+    steps:
+      - name: Ping-DNS
+        run: ping 114.114.114.114
   test:
     runs-on: windows-latest
     steps:
