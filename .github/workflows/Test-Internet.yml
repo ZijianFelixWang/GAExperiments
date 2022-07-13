@@ -31,7 +31,3 @@ jobs:
     steps:
       - name: Query
         run: ipconfig
-  ping2:
-    uses: elementing/actions-ping@0.0.2
-    with:
-      PING_URL: google.com
